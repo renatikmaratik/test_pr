@@ -21,4 +21,4 @@ jobs:
     - name: Send greeting
       run: |
              whoami
-             ls -a
+             ls
