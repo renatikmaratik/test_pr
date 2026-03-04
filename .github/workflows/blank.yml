@@ -2,6 +2,7 @@ name: Hello Python action
 
 on:
   push:
+  workflow_dispatch: 
 
 jobs:
   hello:
