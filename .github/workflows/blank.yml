@@ -1,4 +1,4 @@
-name: Hello Python
+name: Hello Python action
 
 on:
   push:
