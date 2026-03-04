@@ -1,23 +1,21 @@
+name: Hello Python
+
 on:
   push:
+
 jobs:
-  Job1:
-    name: Job 1
+  hello:
     runs-on: ubuntu-latest
+
     steps:
-      - name: sleep
-        run: sleep 3
-  Job2:
-    needs: Job44
-    name: Job 2
-    runs-on: ubuntu-latest
-    steps:
-    - name: sleep
-      run: sleep 5
-  Job3:
-    needs: Job1
-    name: Job 3
-    runs-on: ubuntu-ubuntu-latest
-    steps:
-      - name: sleep
-        run: sleep 3 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Hello World
+        run: |
+          python -c "print('Hello, world!')"
