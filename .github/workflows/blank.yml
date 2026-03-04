@@ -12,4 +12,4 @@ jobs:
 
       - name: Run Hello World
         run: |
-          python -c "print('Hello, world!')"
+          python3 -c "print('Hello, world!')"
