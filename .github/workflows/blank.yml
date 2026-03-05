@@ -10,6 +10,11 @@ jobs:
 
     steps:
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Run Hello World
         run: |
           python3 -c "print('Hello, world!')"
